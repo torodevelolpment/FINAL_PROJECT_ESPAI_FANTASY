@@ -87,7 +87,7 @@ header{
 }
 
 #main-navbar>.wrapper{
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -95,7 +95,7 @@ header{
     flex: 1;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 110px;
+    margin-right: 128px;
 }
 
 .navigation>nav>ul{
@@ -105,7 +105,7 @@ header{
 }
 
 .navigation>nav>ul>li>a{
-    padding: 42px;
+    padding: 40px;
     cursor: pointer;
 }
 
