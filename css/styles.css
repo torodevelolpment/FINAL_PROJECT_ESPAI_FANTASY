@@ -436,6 +436,12 @@ ul>li>ul>li:hover{
     width: 50%;
 }
 
+.infomap-contact-banner{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
 .contact-form-banner form{
     display: flex;
     flex-flow: column nowrap;
