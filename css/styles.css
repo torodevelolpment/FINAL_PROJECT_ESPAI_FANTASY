@@ -128,7 +128,7 @@ header{
     flex: 1;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 128px;
+    margin-right: 23px;
 }
 
 .navigation>nav>ul{
@@ -199,8 +199,9 @@ ul>li>ul>li:hover{
     font-size: 24px;    
 }
 
-.login-section>ul>li>a>svg{
-    max-width: 40px;
+.login-section ul>li:last-child{
+    width: 100px;
+    text-align: center;
 }
 
 /*bootstrap carousel*/
@@ -333,7 +334,7 @@ ul>li>ul>li:hover{
     justify-content: space-around;
     padding: 0 2rem;}
 
-#middle-info-wrapper{
+#middle-info-banner{
     background: url(../img/pixel_path.png);
     background-position: center;
     display: flex;
@@ -342,10 +343,6 @@ ul>li>ul>li:hover{
     align-items: center;
     border-top: var(--green) 1px solid;
     border-bottom: var(--green) 1px solid ;
-}
-
-#middle-info-wrapper h1{
-    color: whitesmoke;
 }
 
 .logo-add-banner{
@@ -454,48 +451,55 @@ ul>li>ul>li:hover{
     background: whitesmoke;
 }
 
-#contact{
+#newsletter{
     background-color: var(--grayBlue);
 }
 
-#contact>.wrapper{
+#newsletter.wrapper{
     width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-flow: row nowrap;
 }
 
-.infomap-contact-banner, .contact-form-banner{
+.call-to-action-banner, .newsletter-banner{
     width: 50%;
 }
 
-.infomap-contact-banner{
+.call-to-action-banner{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-.contact-form-banner form{
+.newsletter-banner h3{
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.newsletter-banner form{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     align-items: center;
 }
 
-.contact-form-banner form>ul{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.contact-form-banner form>ul>li{
+.newsletter-banner form>ul>li{
     padding: 1rem;
     display: flex;
     flex-flow: column nowrap;
 }
 
+.newsletter-banner form>ul>li>input::placeholder{
+    color: black;
+}
+
+.newsletter-banner .logo{
+    width: 50%;
+}
+
 #map {
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
   }
 
 .social-footer-section{
@@ -506,8 +510,11 @@ ul>li>ul>li:hover{
     justify-content: space-evenly;
 }
 
-.social-icons ul{
-    display: inline-flex;
+.social-icons{
+    margin-right: 280px;
+}
+.social-icons ul>li{
+    padding: 1rem;
 }
 
 .privacy-footer-section{
@@ -516,7 +523,7 @@ ul>li>ul>li:hover{
     justify-content: center;
 }
 
-.privacy-footer-section ul{
+.privacy-footer-section ul, .social-icons ul{
     display: inline-flex;
 }
 

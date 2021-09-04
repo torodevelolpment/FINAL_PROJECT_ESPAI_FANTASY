@@ -40,11 +40,12 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="login-section social-icons">
+                <div class="login-section">
                     <ul>
                         <li><a href=""><i class="fab fa-twitch"></i></a></li>
                         <li><a href=""><i class="fab fa-instagram"></i></a></li>
                         <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
                         <li><a href=""><i class="far fa-user"></i></a></li>
                     </ul>
                 </div>
@@ -74,95 +75,78 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div id="middle-section-wrapper">
-            <main>
-                <div class="product-nav">
-                    <div class="wrapper">
-                        <nav>
-                            <ul>
-                                <li><a href="#"><i class="fab fa-playstation"></i></a></li>
-                                <li><a href="#"><i class="fab fa-xbox"></i></a></li>
-                                <li><a href="#"><i class="fas fa-gamepad"></i></a></li>
-                                <li><a href="#"><i class="fas fa-dice-d6"></i></a></li>
-                                <li><a href="#"><i class="fas fa-calendar-alt"></i></a></li>
-                            </ul>
-                        </nav>
+        <div class="middle-section">
+            <div id="middle-section-wrapper">
+                <main>
+                    <div class="product-nav">
+                        <div class="wrapper">
+                            <nav>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-playstation"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-xbox"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-gamepad"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-dice-d6"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-calendar-alt"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                </div>
-                <div class="news-section">
-                    <div class="news-wrapper">
-                        <div class="news-header">
-                            <div class="latest">
-                                <h3>New Arrivals</h3>
+                    <div class="news-section">
+                        <div class="news-wrapper">
+                            <div class="news-header">
+                                <div class="latest">
+                                    <h3>New Arrivals</h3>
+                                </div>
                             </div>
+                            <ul class="home-content">
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                            </ul>
+                            <div id="more">
+                                <a href="#more">Mas Juegos</a>
+                            </div>
+                            <ul id="more-games">
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                                <li class="news-banner"></li>
+                            </ul>
                         </div>
-                        <ul class="home-content">
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                        </ul>
-                        <div id="more">
-                            <a href="#more">Mas Juegos</a>
-                        </div>
-                        <ul id="more-games">
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                            <li class="news-banner"></li>
-                        </ul>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
-        <section id="middle-info-wrapper">
+        <section id="middle-info-banner">
             <div class="logo-add-banner">
                 <img src="img/1200x160__be1eb8d753aa2__1630578631.png" alt="">
             </div>
         </section>
-        <section id="contact">
+        <section id="newsletter">
             <div class="wrapper">
-                <div class="infomap-contact-banner">
-                    <div class="info-contact-banner">
-                        <p>Talk with us! Let us know what are you playing or if we are missing something!</p>
-                    </div>
-                    <div class="map-contact-banner">
-                        <div id="map">
-
-                        </div>
-                    </div>
+                <div class="call-to-action-banner">
+                    <p>Talk with us! Let us know what are you playing or if we are missing something!</p>
                 </div>
-                <div class="contact-form-banner">
+                <div class="newsletter-banner">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <h3>Recibe todas las noticias en tu e-mail</h3>
+                    <p>Todo sobre eGames y eSports, nuevos lanzamientos, torneos y mas.</p>
                     <form action="" method="post">
                         <ul>
                             <li>
-                                <label for="first-name-input">First Name *</label>
-                                <input type="text" name="firstNameInput" id="firstNameInput" />
-                            </li>
-                            <li>
-                                <label for="last-name-input">Last Name *</label>
-                                <input type="text" name="lastNameInput" id="lastNameInput" />
-                            </li>
-                            <li>
-                                <label for="phone-number-input">Phone</label>
-                                <input type="tel" name="phoneNumberInput" id="phoneNumberInput" />
-                            </li>
-                            <li>
-                                <label for="user-email-input">Email *</label>
-                                <input type="mail" id="userEmailInput" name="userEmailInput" />
-                            </li>
-                            <li>
-                                <label for="user-message-input">Your Message Here!</label>
-                                <textarea name="user-message-input" id="user-message-input" cols="46"
-                                    rows="10"></textarea>
+                                <input type="mail" id="userEmailInput" name="userEmailInput"
+                                    placeholder="Ingresa tu e-mail" />
                             </li>
                         </ul>
                         <div class="send-message">
-                            <input type="submit" value="Send Message" id="send-message" name="send-message" />
+                            <input type="submit" value="Quiero Subscribirme" id="send-message" name="send-message" />
                         </div>
                     </form>
                 </div>
@@ -179,6 +163,7 @@
                             <li><a href=""><i class="fab fa-twitch"></i></a></li>
                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
                             <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </div>
                     <div class="up-to-page-button">
@@ -197,7 +182,11 @@
                     </ul>
                 </div>
                 <div class="sitemap-footer-section">
+                    <div class="map-contact-banner">
+                        <div id="map">
 
+                        </div>
+                    </div>
                 </div>
                 <div class="copyright-footer-section">
 
