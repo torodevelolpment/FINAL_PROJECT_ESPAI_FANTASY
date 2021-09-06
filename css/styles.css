@@ -139,7 +139,7 @@ header{
     flex: 1;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 23px;
+    margin-right: 42px;
 }
 
 .navigation>nav>ul{
@@ -532,6 +532,7 @@ ul>li>ul>li:hover{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    padding: 1rem;
 }
 
 .news-img{
@@ -544,13 +545,15 @@ ul>li>ul>li:hover{
 
 }
 
-.news-tittle{
-    
+.news-tittle ul>li{
+    padding: 10px;
 }
+
+
 
 .add-sidebar-section{
     width: 30%;
-    background: blueviolet;
+    background: var(--green2);
 }
 
 #map {
