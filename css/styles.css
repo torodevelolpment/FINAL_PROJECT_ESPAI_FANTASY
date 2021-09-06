@@ -46,6 +46,10 @@
      color: whitesmoke;
  }
 
+ a{
+     text-decoration: none !important;
+ }
+
 
 
  :root{
@@ -209,7 +213,7 @@ ul>li>ul>li:hover{
 
 /*bootstrap carousel*/
 .carousel-item{
-    height: 25rem;
+    height: 30rem;
     color: white;
     background-position: center;
     background-size:cover;
@@ -262,7 +266,7 @@ ul>li>ul>li:hover{
 }
 
 .new-arrivals-wrapper{
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -501,7 +505,7 @@ ul>li>ul>li:hover{
     background: var(--grayBlue);
     display: flex;
     flex-flow: row wrap;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
