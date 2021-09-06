@@ -122,7 +122,11 @@ header{
     width: 20%;
 }
 
-.logo>img{
+.logo a>img{
+    max-width: 300px;
+}
+
+#main-navbar .logo>a>img{
     max-width: 240px;
 }
 
@@ -488,9 +492,10 @@ ul>li>ul>li:hover{
 }
 
 .newsletter-banner form>ul>li{
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     flex-flow: column nowrap;
+    margin-right: 1rem;
 }
 
 .newsletter-banner form>ul>li>input::placeholder{
@@ -498,8 +503,14 @@ ul>li>ul>li:hover{
 }
 
 .newsletter-banner .logo{
-    width: 50%;
+    width: 70%;
+    text-align: center;
 }
+
+.newsletter-banner .logo>a{
+    width: 300px
+}
+
 
 .news-section-banner{
     background: var(--grayBlue);
