@@ -299,28 +299,53 @@ ul>li>ul>li:hover{
     border-radius: 10px;
 }
 
-.new-arrivals-product-banner>li:nth-child(1){
+.new-arrivals-product-banner li:nth-child(1){
     background-image: url(../img/avengers.jpg);
     background-size: cover;
 }
-.new-arrivals-product-banner>li:nth-child(2){
+.new-arrivals-product-banner li:nth-child(2){
     background-image: url(../img/crash_bandicoot.jpg);
     background-size: cover;
 }
-.new-arrivals-product-banner>li:nth-child(3){
+.new-arrivals-product-banner li:nth-child(3){
     background-image: url(../img/god_of_war.jpg);
     background-size: cover;
 }
-.new-arrivals-product-banner>li:nth-child(4){
+.new-arrivals-product-banner li:nth-child(4){
     background-image: url(../img/gran_turismo.jpg);
     background-size: cover;
 }
-.new-arrivals-product-banner>li:nth-child(5){
+.new-arrivals-product-banner li:nth-child(5){
     background-image: url(../img/unchaerted_4.jpg);
     background-size: cover;
 }
-.new-arrivals-product-banner>li:nth-child(6){
+.new-arrivals-product-banner li:nth-child(6){
     background-image: url(../img/last_of_us.jpg);
+    background-size: cover;
+}
+
+#more-games li:nth-child(1){
+    background-image: url(../img/cod-black-ops-cold-war.jpg);
+    background-size: cover;
+}
+#more-games li:nth-child(2){
+    background-image: url(../img/minecraft-xbox.jpg);
+    background-size: cover;
+}
+#more-games li:nth-child(3){
+    background-image: url(../img/f1-2021-xbox.jpg);
+    background-size: cover;
+}
+#more-games li:nth-child(4){
+    background-image: url(../img/cyberpunk-xbox.jpg);
+    background-size: cover;
+}
+#more-games li:nth-child(5){
+    background-image: url(../img/);
+    background-size: cover;
+}
+#more-games li:nth-child(6){
+    background-image: url(../img/);
     background-size: cover;
 }
 
