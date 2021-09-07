@@ -139,7 +139,7 @@ header{
     flex: 1;
     display: flex;
     justify-content: space-evenly;
-    margin-right: 42px;
+    margin-right: 90px;
 }
 
 .navigation>nav>ul{
@@ -211,7 +211,7 @@ ul>li>ul>li:hover{
 }
 
 .login-section ul>li:last-child{
-    width: 100px;
+    width: 50px;
     text-align: center;
 }
 
@@ -247,7 +247,8 @@ ul>li>ul>li:hover{
     padding: 1rem;
     border-bottom: var(--green) 1px solid;
     display: flex;
-    flex: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-nav>.wrapper>nav>ul{
@@ -269,7 +270,7 @@ ul>li>ul>li:hover{
     justify-content: space-between;
 }
 
-.new-arrivals-wrapper{
+.new-arrivals-wrapper, .shop-section-wrapper{
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -288,6 +289,14 @@ ul>li>ul>li:hover{
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0 2rem;
+}
+
+.product-banner{
+    height: 270px;
+    width: 30%;
+    margin-bottom: 30px;
+    box-shadow: 0 13px 14px 0 rgb(0 0 0 / 37%);
+    border-radius: 10px;
 }
 
 .new-arrivals-product-banner>li:nth-child(1){
@@ -315,13 +324,7 @@ ul>li>ul>li:hover{
     background-size: cover;
 }
 
-.product-banner{
-    height: 270px;
-    width: 30%;
-    margin-bottom: 30px;
-    box-shadow: 0 13px 14px 0 rgb(0 0 0 / 37%);
-    border-radius: 10px;
-}
+
 
 #more{
     display: flex;
@@ -597,3 +600,71 @@ ul>li>ul>li:hover{
 .privacy-footer-section ul>li{
     padding: 1rem;
 }
+
+/*Product-page-css*/
+.shop-section-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem
+}
+
+.shop-category-banner{
+    text-align: center;
+}
+
+.shop-items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.shop-items-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 78%;
+}
+
+.product-banner-wrapper{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.product-banner-wrapper>.product-banner{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 13px 14px 0 rgb(0 0 0 / 37%);
+    border-radius: 10px;
+}
+
+.product-description-banner{
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    margin-bottom: 1rem;
+}
+
+.shop-search-bar-section{
+    width: 22%;
+}
+
+.shop-search-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+/*media-queries-responsive: mobile*/
+@media only screen and (max-width:767px)/*(mobile)*/{
+    
+}   
+
+/*media-queries-responsive: tablet*/
+@media only screen and (min-width:768px) and (max-width:1024px){
+    
+    
+}
+
