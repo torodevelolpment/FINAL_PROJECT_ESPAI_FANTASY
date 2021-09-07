@@ -149,7 +149,7 @@ header{
 }
 
 .navigation>nav>ul>li>a{
-    padding: 40px;
+    padding: 15px 40px;
     cursor: pointer;
 }
 
