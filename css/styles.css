@@ -136,7 +136,7 @@ header{
 }
 
 .navigation{
-    margin-right: 70px;
+    margin-right: 90px;
 }
 
 .navigation>nav>ul{
@@ -193,7 +193,7 @@ ul>li>ul>li:hover{
 }
 
 .login-section img{
-    width: 26px;
+    width: 20px;
 }
 
 .login-section svg{
@@ -276,6 +276,10 @@ ul>li>ul>li:hover{
    width: 36px;
 }
 
+.product-nav img:hover, .login-section img:hover{
+    filter: invert(0.4) sepia(0.5) saturate(15.2) hue-rotate(176.4deg) brightness(0.88);
+}
+
 .product-nav>nav>ul>li>a:hover{
    
 }
@@ -283,6 +287,8 @@ ul>li>ul>li:hover{
 .new-arrivals-wrapper, .shop-section-wrapper{
     max-width: 1300px;
     margin: 0 auto;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 .new-arrivals-header{
