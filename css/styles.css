@@ -326,7 +326,7 @@ ul>li>ul>li:hover{
     margin-bottom: 2rem;
 }
 #more>a{
-    color: whitesmoke;
+    color: #f5f5f5;
     background:var(--green);
     border-radius: 10px;
     padding: 10px;
