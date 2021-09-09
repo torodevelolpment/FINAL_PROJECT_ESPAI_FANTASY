@@ -136,7 +136,7 @@ header{
 }
 
 .navigation{
-    margin-right: 90px;
+    margin-right: 70px;
 }
 
 .navigation>nav>ul{
@@ -207,7 +207,7 @@ ul>li>ul>li:hover{
 }
 
 .login-section ul>li{
-    padding: 5px;
+    padding: 10px;
 }
 
 .login-section>ul>li>a:hover{
@@ -255,6 +255,9 @@ ul>li>ul>li:hover{
 .product-nav{
     padding: 1rem;
     border-bottom: var(--green) 1px solid;
+}
+
+.product-nav .wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -269,14 +272,12 @@ ul>li>ul>li:hover{
     padding: 0 4rem;
 }
 
-.product-nav>.wrapper>nav>ul>li>a>i{
-   font-size: 30px;
+.product-nav img{
+   width: 36px;
 }
 
 .product-nav>nav>ul>li>a:hover{
-    color: var(--blue);
-    display: flex;
-    justify-content: space-between;
+   
 }
 
 .new-arrivals-wrapper, .shop-section-wrapper{
