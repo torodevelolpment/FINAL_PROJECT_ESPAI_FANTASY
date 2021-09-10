@@ -150,7 +150,7 @@ header{
 }
 
 .navigation>nav>ul>li>a{
-    padding: 15px 40px;
+    padding: 15px 50px;
     cursor: pointer;
     display: inline-block;
 }
@@ -174,7 +174,7 @@ ul>li>ul>li:hover{
     visibility: hidden;
     position: absolute !important;
     top: 50px;
-    left: 20px;
+    left: 28px;
     z-index: 1;
     background: #000000db;
     display: flex;
@@ -305,6 +305,46 @@ ul>li>ul>li:hover{
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 0 2rem;
+}
+
+.new-arrivals-product-banner .product-banner, #more-games .product-banner{
+    position: relative;
+}
+
+.new-arrivals-product-banner li:hover .info-product-hvr, #more-games li:hover .info-product-hvr{
+    opacity: 0.8;
+}
+
+.info-product-hvr{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--red);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hvr-text{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hvr-text img{
+    width: 300px;
+    opacity: 1;
 }
 
 .product-banner{
