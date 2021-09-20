@@ -76,7 +76,7 @@ body{
   }
   .front{
     text-transform:uppercase;
-    background-color:#232227;
+    background-color:#243a3d;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -84,41 +84,41 @@ body{
   }
   .date{
     height: 100%;
-    width: 160px;
-    background-color: #E76642;
+    width: 220px;
+    background-color: #F82E5E;
     border-radius: 0 6px 6px 0;
-    padding: 10px 30px;
+    padding: 30px 0;
     box-sizing: border-box;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    display: flex;
-    justify-content: space-between;
   }
   .datecont{
-    height:100%;
-    transform:translatez(60px) scale(.9);
-    -webkit-transform:translatez(60px) scale(.9);
+    height: 100%;
+    transform: translatez(60px) scale(.9);
+    -webkit-transform: translatez(60px) scale(.9);
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
   }
   #date{
     font-size:50px;
     color:#ECECE7;
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
-    float:right;
+    margin-bottom: 3rem;
   }
   #day{
-    float:right;
     font-size:14px;
     color:#232227;
     font-family: 'Montserrat', sans-serif;
     font-weight:400;
+    margin-bottom: 2rem;
   }
   #month{
-    float:right;
-    font-size:10px;
+    font-size:20px;
     color:#232227;
     font-family: 'Montserrat', sans-serif;
-    font-weight:200;
+    font-weight:400;
   }
   .date i{
     color:#ECECE7;
@@ -141,14 +141,14 @@ body{
     width:100%;
   }
   .orangeTr{
-    color:#E76642;
+    color:#0998FC;
   }
   .whiteTr{
     color:#ECECE7;
     
   }
   .whiteTr th:hover{
-    color:#E76642;
+    color:#F82E5E;
     transition:.3s ease;
   }
   .month tr{
@@ -177,7 +177,7 @@ body{
     margin-top:20px;
     transform:translatez(60px) scale();
     
-    background-color:#E76642;
+    background-color:#0998FC;
     border-radius:6px;
     padding:10px 30px;
     box-sizing:border-box;
