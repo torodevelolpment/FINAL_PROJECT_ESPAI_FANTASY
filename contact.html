@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
     <script src="https://kit.fontawesome.com/81e4847c16.js" crossorigin="anonymous"></script>
 
-    <title>Espai Fantasy - Register</title>
+    <title>Espai Fantasy - Contact</title>
 
 <body>
     <div id="container">
@@ -34,7 +34,7 @@
                             </li>
                             <li><a href="./register.html">Register</a></li>
                             <li><a href="./demoweek.html">Demo Week</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./demoweek.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -50,48 +50,30 @@
             </div>
         </header>
         <main>
-            <div class="order-now-wrapper">
-                <div class="left-hero-img">
+            <div class="contact-wrapper">
+                <div class="left-hero-section">
+                    <div class="location-info-banner">
+                        <h2>We´re Here!</h2>
+                        <p>Our door is always open for a good game session</p>
+                    </div>
+                    <div class="map-contact-banner">
+                        <div id="map">
 
+                        </div>
+                    </div>
                 </div>
-                <div class="form-banner">
+                <div class="contact-banner">
                     <div class="wrapper">
                         <div class="form-information">
-                            <p>registrate aqui para acceder a nuestra plataforma de Juegos</p>
+                            <h2>lets Talk</h2>
+                            <p>Share your game preferences with us</p>
+                            <p><a href="mailto:info@espaifantasy.com">info@espaifantasy.com</a></p>
                         </div>
                         <form action="" method="post">
                             <ul>
                                 <li>
-                                    <i class="fas fa-user"></i>
-                                    <input type="text" name="username" id="username" required placeholder="Username">
-                                </li>
-                                <li>
-                                    <i class="fas fa-envelope"></i>
-                                    <input type="email" name="email" id="email" required placeholder="Email">
-                                </li>
-                                <li class="userPageField">
-                                    <i class="fas fa-unlock"></i>
-                                    <label for="userpagePasswordInput"></label>
-                                    <input class="userpage-input-password" type="password" id="newPassword"
-                                        name="password" placeholder="Password" required
-                                        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                                        autocomplete="off" />
-                                    <!--<i class="far fa-eye" id="togglePassword"></i>-->
-                                </li>
-                                <li>
-                                    <i class="fas fa-phone"></i>
-                                    <input type="tel" name="mobile" id="mobile" placeholder="Phone">
-                                </li>
-                                <li>
-                                    <label for="birthdate">Fecha de Nacimiento</label>
-                                    <input type="date" id="birthdate" placeholder="fecha de nacimiento">
-                                </li>
-
-                                <li>
-                                    <input type="checkbox" id="checkbox" name="checkbox" />
-                                    <label for="checkbox" id="legals">Acepto las <a href="#">Condiciones del
-                                            servicio</a> y la <a href="#">Politica de privacidad</a> de Google
-                                        Espai</label>
+                                    <label for="user-msg-input">Envianos tu opinion o solicitud y nos pondremos en contacto contigo cuanto antes!</label>
+                                    <textarea name="user-msg-input" id="user-msg-input" cols="46" rows="10"></textarea>
                                 </li>
                             </ul>
                             <div class="submit-btn">
@@ -140,11 +122,7 @@
 
                 <!--footer seccion mapa del sitio-->
                 <div class="sitemap-footer-section">
-                    <div class="map-contact-banner">
-                        <div id="map">
-
-                        </div>
-                    </div>
+                   
                 </div>
 
                 <!--footer seccion copyright-->
@@ -155,6 +133,10 @@
         </footer>
     </div>
     <script src="./js/sticky_nav.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+        async></script>
+    <script src="./js/maps.js"></script>
 </body>
 
 </html>

@@ -114,7 +114,7 @@ header{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
 
@@ -140,7 +140,7 @@ header{
 }
 
 .navigation{
-    margin-right: 80px;
+    margin-right: 50px;
 }
 
 .navigation>nav>ul{
@@ -413,7 +413,7 @@ ul>li>ul>li:hover{
     width: 100%;
 }
 
-/*order_now page*/
+/*register page*/
 .order-now-wrapper{
     display: flex;
     flex-flow: row wrap;
@@ -448,31 +448,31 @@ ul>li>ul>li:hover{
     padding: 2rem;
 }
 
-.form-banner ul{
+.form-banner ul, .contact-banner ul{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-.form-banner li{
+.form-banner li, .contact-banner li{
     padding: 8px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
 
-.form-banner ul>li>i{
+.form-banner ul>li>i, .contact-banner ul>li>i{
     color: white;
     margin-right: 6px;
 }
 
-.form-banner form{
+.form-banner form, .contact-banner form{
     display: flex;
     flex-flow: column;
     align-items: center;
 }
 
-.form-banner input{
+.form-banner input, .contact-banner input{
     width: 290px;
     color: whitesmoke;
     border-radius: 20px;
@@ -484,7 +484,7 @@ ul>li>ul>li:hover{
     
 }
 
-.form-banner ul>li:nth-child(5){
+.form-banner ul>li:nth-child(5), .contact-banner ul>li:nth-child(5){
     flex-flow: column;
 }
 
@@ -505,10 +505,53 @@ ul>li>ul>li:hover{
     padding: 10px 16px;
 }
 
-.form-banner [type=checkbox]{
+.form-banner [type=checkbox], .contact-banner [type=checkbox]{
     width: 15px;
     background: whitesmoke;
 }
+/*register page*/
+
+/*contact page*/
+.contact-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+}
+
+.left-hero-section{
+    background: var(--green3);
+    width: 50%;
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: normal;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.contact-banner{
+    width: 50%;
+}
+
+.contact-banner .wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+    border-radius: 35px;
+    background: -webkit-linear-gradient(
+145deg, #131f24, #16242b);
+    background: -moz-linear-gradient(145deg, #131f24, #16242b);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-banner ul>li:last-child{
+    justify-content: center;
+    text-align: center;
+}
+
+/*contact page*/
 
 #newsletter{
     background-color: var(--grayBlue);
@@ -605,8 +648,8 @@ ul>li>ul>li:hover{
 }
 
 #map {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 520px;
   }
 
 .social-footer-section{
@@ -619,10 +662,10 @@ ul>li>ul>li:hover{
 }
 
 .social-icons{
-    margin-right: 280px;
+    margin-right: 80px;
 }
 .social-icons ul>li{
-    padding: 1rem;
+    padding: 0 2rem;
 }
 
 .social-icons ul>li>p{
