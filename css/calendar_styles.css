@@ -1,8 +1,4 @@
-*{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.5px;
-}
+
 body{
     margin:0;
     background-color:#010712;
@@ -12,8 +8,8 @@ body{
     background-repeat:no-repeat;
     height:100vh;
   }
-  .container{
-    max-width:700px;
+  .calendar-container{
+    max-width:1200px;
     height:500px;
     perspective: 1000;
     -webkit-perspective: 1000;
@@ -27,6 +23,7 @@ body{
     -webkit-transform-style:preserve-3d;
     transition:transform 1s ease;
     cursor:pointer;
+    background-color: transparent !important;
   }
   .back, .front{
     border-radius:6px;
@@ -139,6 +136,7 @@ body{
   }
   .month table{
     width:100%;
+    text-align: center;
   }
   .orangeTr{
     color:#0998FC;
@@ -163,10 +161,6 @@ body{
   
   .flipped{
     transform:rotateY(-180deg);
-    height:500px;
-    width:700px;
-    left:calc(50% - 100px);
-    top:calc(50vh - 200px);
   }
   .backcontainer{
     transform-style:preserve-3d;

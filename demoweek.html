@@ -2,221 +2,216 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/calendar_styles.css">
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
-    <script src="https://kit.fontawesome.com/81e4847c16.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/calendar_styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
+  <script src="https://kit.fontawesome.com/81e4847c16.js" crossorigin="anonymous"></script>
 
-    <title>Espai Fantasy - Home</title>
+  <title>Espai Fantasy - Home</title>
 
 </head>
 
-<body>
-    <div id="container">
+<body onload="startTime()">
+  <div id="container">
+    <!--Navbar Principal-->
+    <header id="main-navbar">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="./index.html"><img src="img/logo_offset_gray.png" alt="Espai Fantasy Logo"></a>
+        </div>
+        <div class="mobile-logo">
+          <a href="./index.html"><img src="img/emblema.png" alt="Emblema Espai Fantasy para Mobile"></a>
+        </div>
+        <div class="navigation">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a>
+                <ul class="dropdown">
+                  <li><a href="#">Playstation</a></li>
+                  <li><a href="#">Xbox</a></li>
+                  <li><a href="#">Nintendo</a></li>
+                  <li><a href="#">Pc Gaming</a></li>
+                </ul>
+              </li>
+              <li><a href="./register.html">Register</a></li>
+              <li><a href="./demoweek.html">Demo Week</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
 
-        <!--Navbar Principal-->
-        <header id="main-navbar">
-            <div class="wrapper">
-                <div class="logo">
-                    <a href="./index.html"><img src="img/logo_offset_gray.png" alt="Espai Fantasy Logo"></a>
-                </div>
-                <div class="mobile-logo">
-                    <a href="./index.html"><img src="img/emblema.png" alt="Emblema Espai Fantasy para Mobile"></a>
-                </div>
-                <div class="navigation">
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./products.html">Products</a>
-                                <ul class="dropdown">
-                                    <li><a href="#">Playstation</a></li>
-                                    <li><a href="#">Xbox</a></li>
-                                    <li><a href="#">Nintendo</a></li>
-                                    <li><a href="#">Pc Gaming</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./register.html">Register</a></li>
-                            <li><a href="./demoweek.html">Demo Week</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <!--mobile hamburguer navigation-->
+        <nav role="navigation">
+          <div id="menuToggle">
 
-                <!--mobile hamburguer navigation-->
-                <nav role="navigation">
-                    <div id="menuToggle">
-                    
-                      <input type="checkbox" />
-                      
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      
-                  
-                      <ul id="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="register.html">register</a></li>
-                        <li><a href="#">Demo Week</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                      </ul>
-                    </div>
-                  </nav>
+            <input type="checkbox" />
 
-                <!--Seccion de Login & rrss-->
-                <div class="login-section">
-                    <ul>
-                        <li><a href=""><img src="./fantasy_project_icons/twitch.svg" alt=""></i></a></li>
-                        <li><a href=""><img src="./fantasy_project_icons/instagram.svg" alt=""></i></a></li>
-                        <li><a href=""><img src="./fantasy_project_icons/facebook.svg" alt=""></i></a></li>
-                        <li><a href=""><img src="./fantasy_project_icons/youtube.svg" alt=""></i></a></li>
-                        <li><a href=""><img src="./fantasy_project_icons/user.svg" alt=""></i></a></li>
-                    </ul>
-                </div>
+            <span></span>
+            <span></span>
+            <span></span>
+
+
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="register.html">register</a></li>
+              <li><a href="#">Demo Week</a></li>
+              <li><a href="contact.html">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!--Seccion de Login & rrss-->
+        <div class="login-section">
+          <ul>
+            <li><a href=""><img src="./fantasy_project_icons/twitch.svg" alt=""></i></a></li>
+            <li><a href=""><img src="./fantasy_project_icons/instagram.svg" alt=""></i></a></li>
+            <li><a href=""><img src="./fantasy_project_icons/facebook.svg" alt=""></i></a></li>
+            <li><a href=""><img src="./fantasy_project_icons/youtube.svg" alt=""></i></a></li>
+            <li><a href=""><img src="./fantasy_project_icons/user.svg" alt=""></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="calendar-container">
+      <div class="card">
+        <div class="front">
+          <div class="contentfront">
+            <div class="month">
+              <table>
+                <tr class="orangeTr">
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                  <th>S</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th></th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                  <th>10</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>19</th>
+                  <th>20</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th>21</th>
+                  <th>22</th>
+                  <th>23</th>
+                  <th>24</th>
+                  <th>25</th>
+                  <th>26</th>
+                  <th>27</th>
+                </tr>
+                <tr class="whiteTr">
+                  <th>28</th>
+                  <th>29</th>
+                  <th>30</th>
+                  <th>31</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </table>
             </div>
-        </header>
-
-        <body onload="startTime()">
-            <div class="container">
-              <div class="card">
-                <div class="front">
-                  <div class="contentfront">
-                    <div class="month">
-                      <table>
-                        <tr class="orangeTr">
-                          <th>M</th>
-                          <th>T</th>
-                          <th>W</th>
-                          <th>T</th>
-                          <th>F</th>
-                          <th>S</th>
-                          <th>S</th>
-                        </tr>
-                        <tr class="whiteTr">
-                          <th></th>
-                          <th>1</th>
-                          <th>2</th>
-                          <th>3</th>
-                          <th>4</th>
-                          <th>5</th>
-                          <th>6</th>
-                        </tr>
-                        <tr class="whiteTr">
-                          <th>7</th>
-                          <th>8</th>
-                          <th>9</th>
-                          <th>10</th>
-                          <th>11</th>
-                          <th>12</th>
-                          <th>13</th>
-                        </tr>
-                        <tr class="whiteTr">
-                          <th>14</th>
-                          <th>15</th>
-                          <th>16</th>
-                          <th>17</th>
-                          <th>18</th>
-                          <th>19</th>
-                          <th>20</th>
-                        </tr>
-                        <tr class="whiteTr">
-                          <th>21</th>
-                          <th>22</th>
-                          <th>23</th>
-                          <th>24</th>
-                          <th>25</th>
-                          <th>26</th>
-                          <th>27</th>
-                        </tr>
-                        <tr class="whiteTr">
-                          <th>28</th>
-                          <th>29</th>
-                          <th>30</th>
-                          <th>31</th>
-                          <th></th>
-                          <th></th>
-                          <th></th>
-                        </tr>
-                      </table>
-                    </div>
-                    <div class="date">
-                      <div class="datecont">
-                        <div id="date"></div>
-                        <div id="day"></div>
-                        <div id="month"></div>
-                        <i class="fa fa-pencil edit" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="back">
-                  <div class="contentback">
-                    <div class="backcontainer">
-                    </div>
-                  </div>
-                </div>
+            <div class="date">
+              <div class="datecont">
+                <div id="date"></div>
+                <div id="day"></div>
+                <div id="month"></div>
+                <i class="fa fa-pencil edit" aria-hidden="true"></i>
               </div>
             </div>
-          </body>
-
-        
-        <!--footer-->
-        <footer class="bottom-section">
-            <div class="wrapper">
-                <!--footer seccion rrss-->
-                <div class="social-footer-section">
-                    <div class="logo">
-                        <a href=""><img src="img/logo_offset_gray.png" alt=""></a>
-                    </div>
-                    <div class="social-icons">
-                        <ul>
-                            <li>
-                                <a href="#">siguenos</a>
-                            </li>
-                            <li><a href=""><i class="fab fa-twitch"></i></a></li>
-                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="up-to-page-button">
-                        <a href="#">Subir</a>
-                    </div>
-                </div>
-                <!--footer seccion privacidad-->
-                <div class="privacy-footer-section">
-                    <ul>
-                        <li><a href="#">privacy elements</a></li>
-                        <li><a href="#">privacy elements</a></li>
-                        <li><a href="#">privacy elements</a></li>
-                        <li><a href="#">privacy elements</a></li>
-                        <li><a href="#">privacy elements</a></li>
-                        <li><a href="#">privacy elements</a></li>
-                        <li><a href="#">privacy elements</a></li>
-                    </ul>
-                </div>
-
-                <!--footer seccion mapa del sitio-->
-                <div class="sitemap-footer-section">
-                    
-                </div>
-
-                <!--footer seccion copyright-->
-                <div class="copyright-footer-section">
-
-                </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="contentback">
+            <div class="backcontainer">
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
     </div>
+    <!--footer-->
+    <footer class="bottom-section">
+      <div class="wrapper">
+        <!--footer seccion rrss-->
+        <div class="social-footer-section">
+          <div class="logo">
+            <a href=""><img src="img/logo_offset_gray.png" alt=""></a>
+          </div>
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#">siguenos</a>
+              </li>
+              <li><a href=""><i class="fab fa-twitch"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-facebook"></i></a></li>
+              <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+          <div class="up-to-page-button">
+            <a href="#">Subir</a>
+          </div>
+        </div>
+        <!--footer seccion privacidad-->
+        <div class="privacy-footer-section">
+          <ul>
+            <li><a href="#">privacy elements</a></li>
+            <li><a href="#">privacy elements</a></li>
+            <li><a href="#">privacy elements</a></li>
+            <li><a href="#">privacy elements</a></li>
+            <li><a href="#">privacy elements</a></li>
+            <li><a href="#">privacy elements</a></li>
+            <li><a href="#">privacy elements</a></li>
+          </ul>
+        </div>
 
-    <!--scripts-->
-    <script src="./js/sticky_nav.js"></script>
-    <script src="./js/flipping_calendar.js"></script>
+        <!--footer seccion mapa del sitio-->
+        <div class="sitemap-footer-section">
+
+        </div>
+
+        <!--footer seccion copyright-->
+        <div class="copyright-footer-section">
+
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<!--scripts-->
+<script src="./js/sticky_nav.js"></script>
+<script src="./js/flipping_calendar.js"></script>
 </body>
 
 </html>
