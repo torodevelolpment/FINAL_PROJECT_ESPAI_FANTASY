@@ -47,6 +47,7 @@ body{
     -webkit-transform-style:preserve-3d;
     display: flex;
     justify-content: space-evenly;
+    justify-items: center;
     
   }
   .contentback{
@@ -81,7 +82,7 @@ body{
   }
   .date{
     height: 100%;
-    width: 220px;
+    width: 280px;
     background-color: #F82E5E;
     border-radius: 0 6px 6px 0;
     padding: 30px 0;
