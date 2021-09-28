@@ -1,0 +1,180 @@
+
+body{
+    margin:0;
+    background-color:#010712;
+    background-image:url(https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:100vh;
+  }
+  .calendar-container{
+    max-width:1200px;
+    height:500px;
+    perspective: 1000;
+    -webkit-perspective: 1000;
+    margin: 0 auto;
+   
+  }
+  .card{
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    transition:transform 1s ease;
+    cursor:pointer;
+    background-color: transparent !important;
+  }
+  .back, .front{
+    border-radius:6px;
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+  }
+  .contentfront{
+    width:100%;
+    height:100%;
+    transform:translatez(60px);
+    -webkit-transform:translatez(60px);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  .contentback{
+    width:100%;
+    height:100%;
+    float:left;
+    transform:translatez(60px);
+    -webkit-transform:translatez(60px);
+    
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+    
+  }
+  .back{
+    transform:rotateY(180deg);
+    background-color:#232227;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .front{
+    text-transform:uppercase;
+    background-color:#243a3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .date{
+    height: 100%;
+    width: 220px;
+    background-color: #F82E5E;
+    border-radius: 0 6px 6px 0;
+    padding: 30px 0;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  }
+  .datecont{
+    height: 100%;
+    transform: translatez(60px) scale(.9);
+    -webkit-transform: translatez(60px) scale(.9);
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  #date{
+    font-size:50px;
+    color:#ECECE7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+    margin-bottom: 3rem;
+  }
+  #day{
+    font-size:14px;
+    color:#232227;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    margin-bottom: 2rem;
+  }
+  #month{
+    font-size:20px;
+    color:#232227;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+  }
+  .date i{
+    color:#ECECE7;
+    position:absolute;
+    bottom:10px;
+    right:0;
+  }
+  .date i:hover{
+    color:#232227;
+    transition:.3s ease;
+  }
+  .month{
+    height:100%;
+    width:100%;
+    padding:20px 30px;
+    box-sizing:border-box;
+    display: flex;
+  }
+  .month table{
+    width:100%;
+    text-align: center;
+  }
+  .orangeTr{
+    color:#0998FC;
+  }
+  .whiteTr{
+    color:#ECECE7;
+    
+  }
+  .whiteTr th:hover{
+    color:#F82E5E;
+    transition:.3s ease;
+  }
+  .month tr{
+    height:24px;
+  }
+  .month th{
+    width:14%;
+    font-size:1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+  }
+  
+  .flipped{
+    transform:rotateY(-180deg);
+  }
+  .backcontainer{
+    transform-style:preserve-3d;
+    width:calc(100% - 60px);
+    height:calc(100% - 40px);
+    float:left;
+    margin-left:30px;
+    margin-top:20px;
+    transform:translatez(60px) scale();
+    
+    background-color:#0998FC;
+    border-radius:6px;
+    padding:10px 30px;
+    box-sizing:border-box;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+  }
