@@ -146,6 +146,8 @@ header{
 
 .navigation{
     margin-right: 100px;
+    font-family: 'Jura', sans-serif;
+
 }
 
 .navigation>nav>ul{
@@ -312,6 +314,9 @@ ul>li>ul>li:hover{
 
 .new-arrivals-header h3{
     color: whitesmoke;
+    font-family: 'Jura', sans-serif;
+    font-size: 2rem !important;
+    font-weight: 400;
 }
 
 .new-arrivals-product-banner{
@@ -522,7 +527,7 @@ ul>li>ul>li:hover{
 .contact-wrapper{
     display: flex;
     flex-flow: row wrap;
-    align-items: baseline;
+    justify-content: space-evenly;
 }
 
 .contact-wrapper h2{
@@ -532,17 +537,14 @@ ul>li>ul>li:hover{
 
 .left-hero-section{
     background: var(--green3);
-    width: 50%;
-    height: 700px;
     background-size: cover;
     display: flex;
     flex-flow: column wrap;
-    justify-content: normal;
     align-items: flex-start;
     padding: 2rem;
 }
 
-.contact-banner{
+.contact-banner, .left-hero-section{
     width: 50%;
 }
 
@@ -550,10 +552,6 @@ ul>li>ul>li:hover{
     display: flex;
     flex-flow: column nowrap;
     align-items: baseline;
-    border-radius: 35px;
-    background: -webkit-linear-gradient(
-145deg, #131f24, #16242b);
-    background: -moz-linear-gradient(145deg, #131f24, #16242b);
     margin: 0 auto;
     padding: 2rem;
 }
