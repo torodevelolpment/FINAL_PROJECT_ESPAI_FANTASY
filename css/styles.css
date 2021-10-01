@@ -429,7 +429,7 @@ ul>li>ul>li:hover{
 }
 
 .logo-add-banner img{
-    width: 100%;
+    width: 50%;
 }
 
 /*register page*/
@@ -766,7 +766,8 @@ ul>li>ul>li:hover{
 }
 
 .shop-search-bar-section{
-    width: 22%;
+    width: 20%;
+    background: var(--green3);
 }
 
 .shop-search-wrapper{
@@ -977,27 +978,27 @@ footer a{
         height: 32px;
         position: absolute;
         top: -5px;
-        right: -4px;
+        right: 16px;
         cursor: pointer;
         opacity: 0;
         z-index: 2;
         -webkit-touch-callout: none;
     }
 
-    #menuToggle span
-    {
-      display: block;
-      width: 33px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
-      background: var(--red);
-      border-radius: 3px;
-      z-index: 1;
-      transform-origin: 4px 0px;
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    #menuToggle span{
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: var(--red);
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                   opacity 0.55s ease;
+        margin-right: 20px;
     }
 
     #menuToggle span:first-child
@@ -1104,12 +1105,21 @@ footer a{
 
     .call-to-action-banner, .newsletter-banner{
         text-align: center;
+        width: 100%;
     }
 
     .news-section-banner{
         flex-flow: column;
     }
 
+    .news-section-wrapper{
+        width: 100%;
+    }
+
+    .news-banner{
+        justify-content: center;
+    }
+    /*footer media queries*/
     .bottom-section .wrapper, .main-footer-section{
         flex-direction: column;
         width: 100%;
@@ -1160,7 +1170,42 @@ footer a{
     .privacy-footer-section ul>li{
         padding: 1rem;
     }
+    /*footer media queries*/
 
+    /*product page media queries*/
+    .shop-items{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .shop-items-wrapper{
+        flex-flow: column;
+    }
+
+    .product-banner-wrapper{
+        width: 100%;
+    }
+    /*product page media queries*/
+
+    /*register page media queries*/
+    .order-now-wrapper{
+        flex-flow: column;
+    }
+
+    .left-hero-img{
+        display: none;
+    }
+
+    .form-banner, .form-banner .wrapper{
+        width: 100%;
+    }
+
+    .form-banner .wrapper{
+        background: none;
+        box-shadow: none;
+    }
+
+    /*register page media queries*/
 }   
 
 /*media-queries-responsive: tablet*/
