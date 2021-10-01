@@ -1032,7 +1032,7 @@ footer a{
     {
       position: fixed;
       top: 0px;
-      right: -20px;
+      right: ;
       width: 100%;
       height: 100%;
       margin: -100px 0 0 -50px;
@@ -1110,12 +1110,45 @@ footer a{
         flex-flow: column;
     }
 
-    .bottom-section .wrapper, .social-footer-section, .privacy-footer-section{
+    .bottom-section .wrapper, .main-footer-section{
         flex-direction: column;
+        width: 100%;
+    }
+
+    .left-footer-section, .center-footer-section, .right-footer-section{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-footer-section form{
+        justify-content: center;
+    }
+
+    .left-footer-section form>ul>li{
+        margin-right: 0px;
+    }
+
+    .left-footer-section form>ul>li>input{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .social-icons{
+        margin-right: 0px;
+    }
+
+    .social-icons ul>li{
+        padding: 0px;
     }
 
     .privacy-footer-section ul{
-        display: block;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .privacy-footer-section ul>li{
+        padding: 1rem;
     }
 
 }   
