@@ -1133,6 +1133,16 @@ footer a{
         margin-bottom: 20px;
     }
 
+    .right-footer-section ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .right-footer-section ul>li{
+        padding: 1rem;
+    }
+
     .social-icons{
         margin-right: 0px;
     }
