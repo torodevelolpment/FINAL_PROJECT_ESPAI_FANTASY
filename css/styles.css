@@ -43,12 +43,15 @@
      
  }
 
- h1, h2, h3, h4{
+ h1, h2{
      color: whitesmoke;
+     font-size: 25px !important;
+     font-weight: bold;
  }
 
  h3,h4{
-     font-size: 20px !important;
+     font-size: 22px !important;
+     font-weight: 400;
  }
 
  a{
@@ -146,6 +149,8 @@ header{
 
 .navigation{
     margin-right: 100px;
+    font-family: 'Jura', sans-serif;
+
 }
 
 .navigation>nav>ul{
@@ -312,6 +317,9 @@ ul>li>ul>li:hover{
 
 .new-arrivals-header h3{
     color: whitesmoke;
+    font-family: 'Jura', sans-serif;
+    font-size: 2rem !important;
+    font-weight: 400;
 }
 
 .new-arrivals-product-banner{
@@ -385,6 +393,7 @@ ul>li>ul>li:hover{
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
+    font-size: 1rem;
 }
 #more>a{
     color: #f5f5f5;
@@ -522,7 +531,7 @@ ul>li>ul>li:hover{
 .contact-wrapper{
     display: flex;
     flex-flow: row wrap;
-    align-items: baseline;
+    justify-content: space-evenly;
 }
 
 .contact-wrapper h2{
@@ -532,17 +541,14 @@ ul>li>ul>li:hover{
 
 .left-hero-section{
     background: var(--green3);
-    width: 50%;
-    height: 700px;
     background-size: cover;
     display: flex;
     flex-flow: column wrap;
-    justify-content: normal;
     align-items: flex-start;
     padding: 2rem;
 }
 
-.contact-banner{
+.contact-banner, .left-hero-section{
     width: 50%;
 }
 
@@ -550,10 +556,6 @@ ul>li>ul>li:hover{
     display: flex;
     flex-flow: column nowrap;
     align-items: baseline;
-    border-radius: 35px;
-    background: -webkit-linear-gradient(
-145deg, #131f24, #16242b);
-    background: -moz-linear-gradient(145deg, #131f24, #16242b);
     margin: 0 auto;
     padding: 2rem;
 }
@@ -567,6 +569,10 @@ ul>li>ul>li:hover{
 }
 
 .location-info-banner{
+    margin-bottom: 25px;
+}
+
+.form-information{
     margin-bottom: 25px;
 }
 
@@ -615,6 +621,23 @@ ul>li>ul>li:hover{
     flex-flow: row nowrap;
     align-items: center;
 }
+
+.send-message [type=submit] {
+        box-shadow:inset -1px 1px 22px 2px #276873;
+        background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+        background-color:var(--green2);
+        border-radius:10px;
+        cursor:pointer;
+        font-size:1rem;
+        font-weight:bold;
+        padding:1px 9px;
+    }
+   
+    .send-message:active {
+        position:relative;
+        top:1px;
+    }
+    
 
 .newsletter-banner form>ul>li{
     padding: 1rem 0;
@@ -686,42 +709,6 @@ ul>li>ul>li:hover{
     width: 520px;
   }
 
-.social-footer-section{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem 0;
-}
-
-.social-icons{
-    margin-right: 180px;
-}
-.social-icons ul>li{
-    padding: 0 1rem;
-}
-
-.social-icons ul>li>p{
-    margin-bottom: 0 !important;
-}
-
-.privacy-footer-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-top: var(--green) solid 1px;
-    border-bottom: var(--green) solid 1px;
-}
-
-.privacy-footer-section ul, .social-icons ul{
-    display: inline-flex;
-    align-items: center;
-}
-
-.privacy-footer-section ul>li{
-    padding: 1rem;
-}
 
 /*Product-page-css*/
 .shop-section-wrapper{
@@ -812,6 +799,102 @@ ul>li>ul>li:hover{
 
 /*rating stars css*/
 /*Product-page-css*/
+
+/*footer css*/
+footer{
+    font-size: 1rem;
+}
+
+footer p{
+    color: gray;
+}
+
+footer h6{
+    color: whitesmoke;
+}
+
+footer a{
+    color: var(--blue);
+}
+
+.bottom-section .wrapper{
+    padding: 1rem;
+    max-width: 1440px;
+    margin: 0 auto;
+} 
+
+.main-footer-section{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.left-footer-section, .center-footer-section, .right-footer-section{
+    padding: 1rem;
+}
+
+.left-footer-section{
+    width: 40%;
+}
+
+.left-footer-section form{
+    display: flex;
+    flex-flow: row wrap; 
+    align-items: center;
+}
+
+.left-footer-section ul>li{
+    margin-right: 20px;
+}
+
+.center-footer-section{
+    width: 20%;
+    flex:1;
+
+}
+
+.right-footer-section{
+    width: 10%;
+}
+
+.social-footer-section{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.social-icons{
+    margin-right: 180px;
+    margin-top: 20px;
+}
+.social-icons ul>li{
+    padding: 0 1rem;
+}
+
+.social-icons ul>li>p{
+    margin-bottom: 0 !important;
+}
+
+.privacy-footer-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: var(--green) solid 1px;
+    border-bottom: var(--green) solid 1px;
+}
+
+.privacy-footer-section ul, .social-icons ul{
+    display: inline-flex;
+    align-items: center;
+}
+
+.privacy-footer-section ul>li{
+    padding: 1rem;
+}
+/*footer css*/
 
 /*media-queries-responsive: mobile*/
 @media only screen and (max-width:767px)/*(mobile)*/{
@@ -949,7 +1032,7 @@ ul>li>ul>li:hover{
     {
       position: fixed;
       top: 0px;
-      right: -20px;
+      right: ;
       width: 100%;
       height: 100%;
       margin: -100px 0 0 -50px;
@@ -1027,12 +1110,45 @@ ul>li>ul>li:hover{
         flex-flow: column;
     }
 
-    .bottom-section .wrapper, .social-footer-section, .privacy-footer-section{
+    .bottom-section .wrapper, .main-footer-section{
         flex-direction: column;
+        width: 100%;
+    }
+
+    .left-footer-section, .center-footer-section, .right-footer-section{
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-footer-section form{
+        justify-content: center;
+    }
+
+    .left-footer-section form>ul>li{
+        margin-right: 0px;
+    }
+
+    .left-footer-section form>ul>li>input{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .social-icons{
+        margin-right: 0px;
+    }
+
+    .social-icons ul>li{
+        padding: 0px;
     }
 
     .privacy-footer-section ul{
-        display: block;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .privacy-footer-section ul>li{
+        padding: 1rem;
     }
 
 }   
