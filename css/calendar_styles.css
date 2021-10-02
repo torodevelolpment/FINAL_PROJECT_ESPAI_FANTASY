@@ -179,3 +179,24 @@ body{
     transform-style:preserve-3d;
     -webkit-transform-style:preserve-3d;
   }
+
+  /*media-queries-responsive: mobile*/
+@media only screen and (max-width:767px)/*(mobile)*/{
+  /*demo week page media queries*/
+  .contentfront{
+    flex-direction: column;
+  }
+  .datecont{
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .date{
+    width: 100%;
+    height: 100px;
+  }
+  #date, #day{
+    margin-bottom: 0;
+  }
+  /*demo week page media queries*/
+}   
