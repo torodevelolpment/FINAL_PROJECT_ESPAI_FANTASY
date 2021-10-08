@@ -372,9 +372,9 @@ ul>li>ul>li:hover{
 .product-banner{
     height: 270px;
     width: 30%;
-    margin-bottom: 30px;
     box-shadow: 0 13px 14px 0 rgb(0 0 0 / 37%);
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 .product-banner figure{
@@ -387,6 +387,11 @@ ul>li>ul>li:hover{
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-banner a{
+
 }
 
 #more{
@@ -746,7 +751,6 @@ ul>li>ul>li:hover{
 .product-banner-wrapper>.product-banner{
     height: 300px;
     width: 100%;
-    margin-bottom: 1rem;
     box-shadow: 0 13px 14px 0 rgb(0 0 0 / 37%);
     border-radius: 10px;
 }
@@ -828,6 +832,7 @@ ul>li>ul>li:hover{
     justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 3rem;
 }
 
 /*left side area*/
