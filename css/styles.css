@@ -825,7 +825,7 @@ ul>li>ul>li:hover{
   .modal-wrapper{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -835,8 +835,8 @@ ul>li>ul>li:hover{
     width: 45%;
 }
 
-#main-img-banner{
-   
+#main-img-banner img{
+   width: 100%;
 }
 /*left side area*/
 
@@ -863,7 +863,7 @@ ul>li>ul>li:hover{
 
 .upper-status-banner{
     
-    padding: 0rem 0rem 1rem 2.5rem;
+   
 }
 
 .upper-status-banner p{
@@ -878,12 +878,12 @@ ul>li>ul>li:hover{
     width: 100%;    
     
     border: silver 2px solid;
-    margin-top: 1rem;
+   
 }
 
 /*section 1*/
 #item-ref-box{
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem;
 }
 
 #item-ref-box span{
@@ -919,7 +919,7 @@ ul>li>ul>li:hover{
 
 /*section 3*/
 #item-size-banner{  
-    padding: 1rem;
+    
     width: 100%;
     text-align: center;
 }
@@ -945,7 +945,7 @@ ul>li>ul>li:hover{
 
 /*section 4*/
 #rating-banner{
-    padding: 1rem;
+    margin-bottom: 14px;
     text-align: center;
 }
 
@@ -974,8 +974,7 @@ ul>li>ul>li:hover{
 #down-right-banner p{
     font-weight: bold;
     font-size: 2rem;
-    margin-left: 1.5rem;
-    margin-top: 4px;
+    margin-bottom: 0;
 }
 
 #myButton {
@@ -1401,6 +1400,35 @@ footer a{
     }
 
     .product-banner-wrapper{
+        width: 100%;
+    }
+
+    .shop-search-bar-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .shop-search-wrapper form{
+        display: flex;
+        flex-flow: column;
+    }
+    .shop-search-wrapper form>input{
+        margin-bottom: 1rem;
+        margin-top: 1rem;    
+    }
+    .main-img-banner{
+        display: none;
+    }
+
+    .modal-wrapper{
+        flex-flow: column;
+    }
+
+    #left-side-box {
+        width: 100%;
+    }
+
+    #main-content-box {
         width: 100%;
     }
     /*product page media queries*/
