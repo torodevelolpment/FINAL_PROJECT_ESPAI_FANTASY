@@ -754,6 +754,7 @@ ul>li>ul>li:hover{
 .product-description-banner{
     width: 100%;
     margin-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .product-description-banner p{
@@ -797,8 +798,225 @@ ul>li>ul>li:hover{
      position: absolute;
      color: goldenrod;
   }
-
 /*rating stars css*/
+
+/*modal-window-css*/
+.modal-contenido{
+    width:100%;
+    padding: 10px 20px;
+    
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    display: block !important;
+  }
+  #miModal1:target,  #miModal2:target,  #miModal3:target,  #miModal4:target,  #miModal5:target, #miModal6:target,  #miModal7:target,  #miModal8:target,  #miModal9:target,  #miModal10:target, #miModal11:target, #miModal12:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .modal-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*left side area*/
+#left-side-box{
+    width: 45%;
+}
+
+#main-img-banner{
+   
+}
+/*left side area*/
+
+/*right side area*/
+#main-content-box{
+    width: 50%;
+}
+
+/*right side tittle area*/
+#upper-tittle-box{
+  
+}
+
+.upper-tittle-banner{
+   
+   
+}
+
+.upper-tittle-banner h1{
+    font-weight: bold;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.upper-status-banner{
+    
+    padding: 0rem 0rem 1rem 2.5rem;
+}
+
+.upper-status-banner p{
+    font-size: 14px;
+}
+
+/*right side tittle area*/
+
+/*left side main area*/
+
+#main-content-banner{
+    width: 100%;    
+    
+    border: silver 2px solid;
+    margin-top: 1rem;
+}
+
+/*section 1*/
+#item-ref-box{
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+#item-ref-box span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#item-ref-box input{
+    margin-left: 20px;
+    width: 15%;
+}
+/*section 1*/
+
+/*section 2*/
+#thumbnail-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#thumbnail-banner ul{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#thumbnail-banner>ul>li>img{
+    border: silver 2px solid;
+    cursor: pointer;
+}
+/*section 2*/
+
+/*section 3*/
+#item-size-banner{  
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.size-item{
+    padding-bottom: 1rem;
+    width: 50%;
+}
+
+.size-item span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.size-range{
+    width: 90%;
+}
+
+.size-range input{
+    width: 90%;
+}
+/*section 3*/
+
+/*section 4*/
+#rating-banner{
+    padding: 1rem;
+    text-align: center;
+}
+
+#rating-banner>ul>li{
+    display: inline-block;
+    font-size: 20px;
+}
+
+#rating-banner>ul>li>a{
+    font-size: 1rem;
+}
+
+#rating-banner li:nth-child(3){
+    color: silver;
+}
+/*section 4*/
+
+/*footer*/
+#down-right-banner{
+    background: silver;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#down-right-banner p{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    margin-top: 4px;
+}
+
+#myButton {
+	background:linear-gradient(to bottom, #1c82ff 5%, #13619c 100%);
+	background-color:#1c82ff;
+	border-radius:21px;
+	border:1px solid #005285;
+    float: right;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:11px 12px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+#myButton:hover {
+	background:linear-gradient(to bottom, #13619c 5%, #1c82ff 100%);
+	background-color:#13619c;
+}
+#myButton:active {
+	position:relative;
+	top:1px;
+}
+/*footer*/
+
+/*share info*/
+.share-banner{
+    width: 70%;
+    margin-left: 1rem;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+.share-banner p{
+    float: left;
+    padding-right: 1rem;
+}
+/*share info*/
+/*modal-window-css*/
 /*Product-page-css*/
 
 /*footer css*/
