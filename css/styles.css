@@ -775,9 +775,14 @@ ul>li>ul>li:hover{
     background: var(--green3);
 }
 
-.shop-search-wrapper{
+.shop-search-wrapper form{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#search-items{
+    margin-bottom: 10px;
 }
 
 /*rating stars css*/
