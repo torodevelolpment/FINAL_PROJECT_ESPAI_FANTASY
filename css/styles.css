@@ -841,17 +841,17 @@ ul>li>ul>li:hover{
 }
 
 /*left side area*/
-#left-side-box{
+.left-side-box{
     width: 45%;
 }
 
-#main-img-banner img{
+.main-img-banner img{
    width: 100%;
 }
 /*left side area*/
 
 /*right side area*/
-#main-content-box{
+.main-content-box{
     width: 50%;
 }
 
@@ -1431,11 +1431,11 @@ footer a{
         flex-flow: column;
     }
 
-    #left-side-box {
+    .left-side-box {
         width: 100%;
     }
 
-    #main-content-box {
+    .main-content-box {
         width: 100%;
     }
     /*product page media queries*/
@@ -1489,4 +1489,6 @@ footer a{
     
     
 }
-
+.classdope{
+    background-color: #dfacce;
+}
